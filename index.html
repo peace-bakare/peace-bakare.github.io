@@ -5,8 +5,218 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/peace.png" alt="Logo signifying Peace!" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Peace Bakare</span><br>From Nigeria</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------about--------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Experienced Software Engineer with demonstrated history of working in the Banking industry. 
+                        Working extensively into enterprise web applications with C# and prevalent ecosystem including ASP.NET Core and ASP.NET Framework, 
+                        MVC, API and Blazor. Skilled in Object-Oriented Programming (OOP), C#, Java, Design Patterns, Client-Server Architecture, Microservices, 
+                        Data Structures and Algorithms.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Backend Engineering</span><br>Building Backend systems of Web applications</li>
+                            <li><span>Cybersecurity</span><br>Understanding & securing systems</li>
+                            <li><span>Artificial Intelligence</span><br>Building Intelligent systems</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Oct 2022 - Present</span><br>Backend Engineer at Sterling Alternative Finance</li>
+                            <li><span>July 2021 - July 2022</span><br>Software Engineering Intern (Backend) at Sterling Bank Plc</li>
+                            <li><span>March 2021 - June 2021</span><br>Software Engineering Intern (Frontend) at Stransact Partners</li>
+                            <li><span>March 2020 - February 2021</span><br>Financial Inclusion Trainer at Jaiz Bank Plc</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>August 2023 - Present</span><br>Machine Learning at Coursera (Standford University)</li>
+                            <li><span>May 2023 - August 2023</span><br>Certificate in Cybersecurity (CC) by (ISC)2</li>
+                            <li><span>May 2023</span><br>Introduction to Agile Methodologies at Sterling Academy</li>
+                            <li><span>January 2015 - November 2019</span><br>Bsc. Computer Sciences from University of Lagos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------Services--------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design - Backend</h2>
+                    <p>Designing websites enabling backend services with web APIs</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-lock"></i>
+                    <h2>Security Training</h2>
+                    <p>Training enthusiasts in security</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>Machine Learning Engineer</h2>
+                    <p>Building models</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------Portfolio-------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work-1.png" alt="First Work">
+                    <div class="layer">
+                        <h3>Student Information System</h3>
+                        <p>The app allows an high school to effectively manage their test scores and reporting lines
+                            Contact me for more information.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png" alt="Second Work">
+                    <div class="layer">
+                        <h3>GetArtisan App</h3>
+                        <p>The app connects talented people around the world, Artisans to work when demand is placed by clients.
+                            Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png" alt="Third Work">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+<!-- -----------Contact--------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> peaceekundayobakare@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i> +2348108015546</p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/bakare.peace.5/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/Peaceoluwaa" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/real_peacebakare/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/bakarepeace/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1Fh7mUYmYmE3QqinUG7v_1Bo7UoRaFc07/view?usp=drive_link" target="_blank" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2 btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Peace.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script> 
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openMenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closeMenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+  
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwXJmaNb_jwclSMIKVjA1qDT04Tm9ZUtpePg4Pyl0wDM7nbL-Q4V7JtVolJOczmW-f50A/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+</script>
 </body>
 </html>
